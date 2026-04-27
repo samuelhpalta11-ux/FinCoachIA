@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinCoach AI</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Iconos -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar container">
+
+      <div class="logo">
+  <img src="assets/logo-fincoach.png" alt="FinCoach AI">
+</div>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#funciona">Cómo funciona</a></li>
+        <li><a href="#retos">Retos</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+  <button class="btn btn-light" id="loginBtn">Iniciar sesión</button>
+  <button class="btn btn-dark" id="registerBtn">Registrarse</button>
+</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container" id="inicio">
+
+    <div class="hero-text">
+      <span class="tag">Proyecto USC · IA + Finanzas</span>
+
+      <h1>
+        Tu bolsillo también necesita inteligencia.
+      </h1>
+
+      <p>
+        FinCoach AI ayuda a estudiantes universitarios
+        a controlar gastos, recibir alertas inteligentes
+        y construir hábitos financieros sostenibles.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-dark">Explorar</a>
+        <a href="#" class="btn btn-yellow">Ver proyecto</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+
+      <div class="money-card">
+        <p>Meta de ahorro mensual</p>
+        <h2>+$480.000</h2>
+      </div>
+
+      <div class="mini-grid">
+        <div class="mini-box gray">
+          🔔 Alertas IA
+        </div>
+
+        <div class="mini-box yellow">
+          📊 Reporte mensual
+        </div>
+
+        <div class="mini-box dark full">
+          🧠 Consejo:
+          Reduce gastos hormiga y ahorra 12% más este mes.
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem container">
+    <h2>Problemas que resolvemos</h2>
+
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>Sobreendeudamiento</h3>
+        <p>Controla tus gastos antes de que se acumulen.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Compras impulsivas</h3>
+        <p>Recibe alertas antes de gastar innecesariamente.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Poca organización</h3>
+        <p>Visualiza tu dinero de forma simple y clara.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONA -->
+  <section class="works container" id="funciona">
+    <h2>¿Cómo funciona?</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <h3>Analiza</h3>
+        <p>La IA identifica patrones de gasto.</p>
+      </div>
+
+      <div class="step">
+        <span>2</span>
+        <h3>Predice</h3>
+        <p>Detecta compras impulsivas y riesgos.</p>
+      </div>
+
+      <div class="step">
+        <span>3</span>
+        <h3>Guía</h3>
+        <p>Te recomienda cómo ahorrar mejor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETOS -->
+  <section class="retos container" id="retos">
+    <h2>Retos financieros</h2>
+
+    <div class="challenge-box">
+      <div>☕ Reduce cafés fuera de casa</div>
+      <div>🍔 Controla gastos hormiga</div>
+      <div>🎯 Meta semanal de ahorro</div>
+    </div>
+  </section>
+<!-- CHAT IA -->
+<section class="chat container">
+
+  <h2>Coach IA Financiero</h2>
+
+  <div class="chat-box">
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot">
+        💬 Hola, soy tu coach financiero. ¿En qué puedo ayudarte hoy?
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Pregúntale a FinCoach...">
+      <button id="sendBtn">Enviar</button>
+    </div>
+
+  </div>
+
+</section>
+  <!-- IMPACTO -->
+  <section class="impact" id="impacto">
+    <div class="container impact-content">
+      <h2>Impacto 2026A</h2>
+      <p>300 estudiantes beneficiados en el piloto inicial.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>FinCoach AI © 2026</p>
+  </footer>
+<!-- MODAL LOGIN -->
+<div class="modal" id="authModal">
+  <div class="modal-box">
+
+    <span class="close-modal" id="closeModal">&times;</span>
+
+    <h2 id="modalTitle">Iniciar sesión</h2>
+
+    <form>
+      <input type="text" placeholder="Nombre completo">
+      <input type="email" placeholder="Correo electrónico">
+      <input type="password" placeholder="Contraseña">
+
+      <button type="submit" class="btn btn-dark full-btn">
+        Continuar
+      </button>
+    </form>
+
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
